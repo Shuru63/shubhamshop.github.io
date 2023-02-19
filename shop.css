@@ -1,0 +1,914 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    text-decoration: 0;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    color: black;
+
+}
+
+#bg {
+    background-color: rgba(8, 129, 120, 0.2);
+}
+
+.mobile {
+    display: none;
+}
+
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 80px;
+    background-color: rgb(227, 230, 243);
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.6);
+}
+
+.header img {
+    width: 12rem;
+    height: 8rem;
+}
+#close{
+    font-size:2rem;
+  display:none;
+}
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.navbar li {
+    padding: 0rem 0.5rem;
+    position: relative;
+    margin: 0.5rem;
+}
+.navbar li a {
+    font-size: 25px;
+    font-weight: 600;
+    color: rgb(0, 0, 0);
+    border: 2px  ;
+    padding:  0.5rem;
+}
+.navbar img {
+    width: 3rem;
+    height: 3rem;
+}
+
+.navbar li a:hover,
+.navbar li a:link{
+    color: rgb(8, 129, 120);
+}
+.navbar li:hover:before {
+    position: absolute;
+    content: "";
+    width: 40px;
+    height: 15px;
+    border-bottom: 2px solid  rgba(8, 129, 120, 0.784);
+    left: 1rem;
+    top:0.8rem;
+    transition: 2s ease-in-out;
+}
+.hero {
+    background-image: url("materiale-com/banner.jpg");
+    background-repeat: no-repeat;
+    height: 30vh;
+    width: 100%;
+    background-size: cover;
+    padding: 0 8rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.hero h1 {
+    color: rgb(255, 255, 255);
+    font-size: 3rem;
+    line-height: 3rem;
+    word-spacing: 4px;
+    text-align: center;
+}
+
+.hero p {
+    font-size: 1.3rem;
+    color: rgb(173, 170, 170);
+    line-height: 4rem;
+    text-align: center;
+}
+.pro-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 2rem 2rem 0rem 2rem;
+}
+
+.pro {
+    flex-direction: column;
+    width: fit-content;
+    padding: 10px 12px;
+    border: 1px solid black;
+    cursor: pointer;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
+    margin: 3rem 0rem 3rem 0rem;
+    border-radius: 1rem;
+
+}
+
+.pro:hover {
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.pro img {
+    width: fit-content;
+    height: 15rem;
+    background-color: rgba(240, 240, 234, 0.556);
+    border-radius: 1rem;
+}
+
+.dess {
+    font-size: 1rem;
+
+}
+
+.dess h4 {
+    color: rgb(8, 129, 120);
+    font-size: 1.5rem;
+    font-weight: lighter;
+}
+
+.star {
+    display: flex;
+    align-items: center;
+}
+
+.star h3 {
+    color: gold;
+}
+
+.fstar {
+    margin-right: 3px;
+}
+
+.buy {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.buy h3 {
+    color: rgb(8, 129, 120);
+}
+
+#buy {
+    width: 3rem;
+    height: 3rem;
+    padding: 5px;
+    border-radius: 5rem;
+    background-color: rgb(235, 242, 243);
+}
+
+#buy:hover {
+    background-color: rgb(253, 235, 221);
+}
+.next{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.nextbotton button {
+ background: rgb(34, 85, 69);
+ font-size: 2rem;
+ padding: 0.5rem 1.2rem 0.5rem 1.2rem;
+ box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3);
+ font-weight: bold;
+ margin:0.1rem;
+ border-radius: 0.7rem;
+}
+.nextbotton button a{
+     color: aliceblue;
+}
+.nextbotton button:hover{
+    background: #041e42;
+}
+.banner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    background-image: url("materiale-com/bgbanner.jpg");
+    background-color: #041e42;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 5rem 8rem;
+    color: aliceblue;
+    height: 25vh;
+    margin-top: 2rem;
+
+}
+
+.signup h4 {
+    font-size: 1.6rem;
+}
+
+.signup p {
+    font-size: 1rem;
+    color: #aec2dd;
+}
+
+.email input {
+    height: 2.7rem;
+    width: 30rem;
+    font-size: 1.2rem;
+    padding: 0em 1.25em;
+    border: 1px solid transparent;
+    border-radius: 5px 0px 0px 5px;
+    outline: none;
+}
+
+.signup span {
+    color: gold;
+}
+
+.email {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.email button {
+    font-size: 1.53rem;
+    background-color: rgb(181, 248, 186);
+    border: 1px solid transparent;
+    border-radius: 0px 5px 5px 0px;
+    white-space: nowrap;
+    padding: 0.27em 1.25em;
+    color: aliceblue;
+}
+button:hover{
+    background-color: rgb(249, 200, 189);
+}
+.foter {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    font-size: 1.5em;
+    margin: 5rem 5rem 2rem 5rem;
+}
+
+.col {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.col h4 {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+.col p {
+    font-size: 1rem;
+    color: rgb(77, 77, 75);
+    gap: 2rem;
+}
+
+.col a {
+    font-size: 1rem;
+    color: rgb(77, 77, 75);
+    margin: 10px;
+}
+
+.col a:hover {
+    color: rgb(250, 205, 188);
+}
+
+.col img {
+    height: 6rem;
+    width: 15rem;
+}
+
+.icon {
+    display: flex;
+    margin-top: 2rem;
+}
+
+.icon img {
+    width: 2rem;
+    height: 2rem;
+    margin: 5px;
+    border-radius: 2rem;
+}
+
+.icon img:hover {
+    background: rgb(242, 194, 194);
+    padding: 2px;
+}
+
+.follow {
+    margin-top: 2rem;
+}
+
+.application h4 {
+    font-size: 1rem;
+    margin: 0rem 0rem 2rem 0rem;
+}
+
+.application p {
+    font-size: 1rem;
+}
+
+.row img {
+    width: 12rem;
+    height: 5rem;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+    border: 1px solid rgb(120, 118, 118);
+    border-radius: 0.5rem;
+    padding: 0rem 2rem;
+    margin: 1rem 0rem 2rem 0rem;
+}
+
+.row img:hover {
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+.create {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1rem;
+}
+@media screen and (max-width:300px){
+    .header{
+        padding: 0.5rem;
+    }
+    .header img {
+        width: 8rem;
+        height: 4rem;
+
+    }
+    #close{
+        font-size:2rem;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    .navbar {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+        position: fixed;
+        top: 0;
+        right: -300px;
+        width: 170px;
+        height:100vh;
+        background-color: rgb(255, 255, 255);
+        box-shadow: 0 40-x 60px rgba(0, 0, 0, 0.0.3);
+        padding: 10px 0px 0px 20px;
+        transition: 3s;
+    }
+
+    .navbar li {
+        margin-bottom: 25px;
+    }
+    .navbar.active{
+        right:0;
+    }
+    .mobile {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    
+    }
+    .fa-bars{
+        font-size: 1.5rem;
+        margin-right:10px ;
+        color: black;
+    }
+.fa-cart-shopping{
+    font-size: 1.5rem; 
+    color: black;  
+}
+    .mobile img {
+        width: 2rem;
+        height: 3rem;
+    }
+
+    /* ========hero===== */
+    .hero {
+        height: 20vh;
+        width: 100%;
+        background-position: center;
+        background-size: cover;
+        padding: 0;
+    }
+
+    .hero h1 {
+        color: rgb(8, 129, 120);
+        font-size: 2rem;
+        line-height: 1.5rem;
+    }
+    .hero p {
+        font-size: 1rem;
+        color: rgb(173, 170, 170);
+        line-height: 1.5rem;
+    }
+    /* ===========product============ */
+    .product1 h2 {
+        font-size: 2rem;
+    }
+
+    .product1 p {
+        font-size: 1.45rem;
+    }
+
+    .pro {
+        margin: 1.5rem 0rem 1.5rem 0rem;
+        width: 40vh
+    }
+
+    .pro img {
+        width: 100%;
+        height: 40vh;
+    }
+
+    .dess span {
+        font-size: 1rem;
+    }
+
+    .dess h4 {
+        font-size: 1.5rem;
+    }
+
+    .buy h3 {
+        font-size: 1.5rem;
+    }
+
+    .fstar h3 {
+        font-size: 1.5rem;
+    }
+    .nextbotton button {
+        font-size: 1rem;
+    }
+    /* =========banner====== */
+    .banner {
+        padding: 2rem 3rem;
+        height: 20vh;
+    }
+
+    .signup h4 {
+        font-size: 0.7rem;
+    }
+
+    .signup p {
+        font-size: 0.5rem;
+    }
+
+    .email input {
+        height: 1rem;
+        width: 7rem;
+        font-size: 0.6rem;
+        padding: 0rem 0.8rem;
+
+    }
+   
+    .email button {
+        font-size: 0.35rem;
+        padding: 0.27rem 1rem;
+
+    }
+    .icon {
+        margin: 0;
+    }
+    .icon a{
+        margin: 2px;
+    }
+.application img{
+    width: 10rem;
+}
+    /* ==========fotter  for ipad========== */
+    .foter {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-direction: column;
+        font-size: 3em;
+        margin: 4rem 2rem 2rem 2rem;
+    }
+    .create{
+        font-size: 0.5rem;
+    }
+
+}
+/* ======small phone======= */
+@media screen and (min-width:300px)and (max-width:412px) {
+    .header{
+            padding: 0.5rem;
+    }
+    .header img {
+        width: 13rem;
+        height: 7rem;
+        padding: 0.5rem;
+    }
+    #close{
+        font-size:2rem;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    .navbar {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        position: fixed;
+        top: 0;
+        right: -300px;
+        width: 170px;
+        background-color: rgb(255, 255, 255);
+        box-shadow: 0 40-x 60px rgba(0, 0, 0, 0.0.3);
+        padding: 80px 0px 0px 20px;
+        transition: 3s;
+    }
+
+    .navbar li {
+        margin-bottom: 25px;
+    }
+    .navbar.active{
+        right:0;
+    }
+    .mobile {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    
+    }
+    .fa-bars{
+        font-size: 1.5rem;
+        margin-right:12px ;
+        color: black;
+    }
+.fa-cart-shopping{
+    font-size: 1.5rem; 
+    color: black;  
+}
+    .mobile img {
+        width: 2rem;
+        height: 3rem;
+    }
+
+    /* ========hero===== */
+    .hero {
+        height: 20vh;
+        width: 100%;
+        background-position: center;
+        background-size: cover;
+        padding: 0;
+    }
+
+    .hero h1 {
+        color: rgb(8, 129, 120);
+        font-size: 2rem;
+        line-height: 1.5rem;
+    }
+    .hero p {
+        font-size: 1rem;
+        color: rgb(173, 170, 170);
+        line-height: 1.5rem;
+    }
+    /* ===========product============ */
+    .product1 h2 {
+        font-size: 2rem;
+    }
+
+    .product1 p {
+        font-size: 1.45rem;
+    }
+
+    .pro {
+        margin: 1.5rem 0rem 1.5rem 0rem;
+        width: 40vh
+    }
+
+    .pro img {
+        width: 100%;
+        height: 40vh;
+    }
+
+    .dess span {
+        font-size: 1rem;
+    }
+
+    .dess h4 {
+        font-size: 1.5rem;
+    }
+
+    .buy h3 {
+        font-size: 1.5rem;
+    }
+
+    .fstar h3 {
+        font-size: 1.5rem;
+    }
+    .nextbotton button {
+        font-size: 1rem;
+    }
+    /* =========banner====== */
+    .banner {
+        padding: 2rem 3rem;
+        height: 20vh;
+    }
+
+    .signup h4 {
+        font-size: 0.7rem;
+    }
+
+    .signup p {
+        font-size: 0.5rem;
+    }
+
+    .email input {
+        height: 1rem;
+        width: 7rem;
+        font-size: 0.6rem;
+        padding: 0rem 0.8rem;
+
+    }
+   
+    .email button {
+        font-size: 0.35rem;
+        padding: 0.27rem 1rem;
+
+    }
+    .icon {
+        margin: 0;
+    }
+    .icon a{
+        margin: 2px;
+    }
+.application img{
+    width: 10rem;
+}
+    /* ==========fotter  for ipad========== */
+    .foter {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-direction: column;
+        font-size: 3em;
+        margin: 4rem 2rem 2rem 2rem;
+    }
+    .create{
+        font-size: 0.5rem;
+    }
+}
+
+/* ==========media quries */
+@media screen and (min-width:412px)and (max-width:900px) {
+    .header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0.5rem;
+    }
+    #close{
+        font-size:2rem;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    .navbar {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+        position: fixed;
+        top: 0;
+        right: -300px;
+        width: 170px;
+        background-color: rgba(8, 129, 120, 0.2);
+        box-shadow: 0 40-x 60px rgba(0, 0, 0, 0.0.3);
+        padding: 80px 0px 0px 20px;
+        transition: 3s;
+    }
+
+    .navbar li {
+        margin-bottom: 25px;
+    }
+
+    .mobile {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+  .navbar.active{
+    right:0px;
+  }
+    .mobile img {
+        width: 2rem;
+        height: 3rem;
+    }
+    .fa-bars{
+        font-size: 1.5rem;
+        margin-right:20px ;
+        color: black;
+    }
+.fa-cart-shopping{
+    font-size: 1.5rem; 
+    color: black;  
+}
+    /* ========hero===== */
+    .hero {
+        height: 15vh;
+        width: 100%;
+        background-position: center;
+        background-size: cover;
+        padding: 0 2rem;
+    }
+    .hero h1 {
+        color: rgb(8, 129, 120);
+        font-size: 1.8rem;
+        text-align: center;
+    }
+    .hero p {
+        font-size: 1.2rem;
+        color: rgb(173, 170, 170);
+        text-align: center;
+    }    
+    /* ===========product============ */
+    .product1 {
+        margin-top: 2rem;
+    }
+
+    .product1 h2 {
+        font-size: 1.8rem;
+        text-align: center;
+        line-height: 3rem;
+    }
+
+    .product1 p {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .pro-container {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+        margin-top: 2rem;
+    }
+
+    .pro {
+        margin: 1.3rem 0rem 1.3rem 0rem;
+        width: 28vh
+    }
+
+    .pro img {
+        width: 100%;
+        height: 30vh;
+    }
+    .dess span{
+        font-size: 0.8rem;
+    }
+    .dess h4{
+        font-size: 1rem;
+    }
+    .fstar {
+        margin-right: 3px;
+    }
+    .fstar h3{
+        font-size: 1rem;
+    }
+    .buy h3{
+        font-size: 1rem;
+    }
+    #buy{
+        width: 1.7rem;
+        height: 1.7rem;
+        padding: 3px;
+    }
+
+    /* =========banner====== */
+    .banner {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 5rem 5rem;
+        color: aliceblue;
+        height: 10vh;
+
+    }
+
+    .signup h4 {
+        font-size: 1rem;
+    }
+
+    .signup p {
+        font-size: 0.6rem;
+    }
+
+    .email input {
+        height: 1.525rem;
+        width: 10rem;
+        font-size: 0.6rem;
+        padding: 0em 0.5rem;
+    }
+
+    .email button {
+        font-size: 1rem;
+        padding: 0.10rem 1rem;
+    }
+
+    /* ==========fotter  for ipad========== */
+    .foter {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        font-size:1.5em;
+        margin: 5rem 2rem 2rem 2rem;
+    }
+
+    .col {
+        margin: 0rem 0.5rem 0rem 0.5rem;
+    }
+
+    .col h4 {
+        font-size: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .col p {
+        font-size: 0.6rem;
+        color: rgb(77, 77, 75);
+        gap: 2rem;
+    }
+
+    .col a {
+        font-size: 0.6rem;
+        color: rgb(77, 77, 75);
+        margin: 5px;
+    }
+
+    .col img {
+        height: 5rem;
+        width: 8rem;
+    }
+
+    .icon {
+        margin-top: 0.2rem;
+    }
+
+    .icon img {
+        width: 0.8rem;
+        height: 0.7rem;
+        margin: 3px;
+        border-radius: 2rem;
+    }
+
+    .follow {
+        margin-top: 1rem;
+    }
+
+    .application h4 {
+        font-size: 0.6rem;
+        margin: 0rem 0rem 1rem 0rem;
+    }
+
+    .application p {
+        font-size: 0.6rem;
+        margin: 0rem 0rem 1rem 0rem;
+    }
+
+    .row img {
+        width: 8rem;
+        height: 3rem;
+        margin: 0rem 0rem 0rem 0rem;
+    }
+
+    .application img {
+        width: 8rem;
+        height: 3rem;
+    }
+
+    .create {
+        font-size: 1rem;
+    }
+}
